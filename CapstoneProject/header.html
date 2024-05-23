@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+
+    <!-- Favicon link-->
+    <link rel="icon" type="image/x-icon"
+        href="https://media.istockphoto.com/id/1156475055/photo/clothes-in-shopping-mall.jpg?s=612x612&w=0&k=20&c=t7iEru1bJmMr5PMHQcFBl95bGHRrv__yRwd33CBnyts=">
+
+    <!-- Bootstrap CSS link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Bootstrap JS link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+        <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+        integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- jQuery link -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fuggles">
+
+    <style>
+        /*Cart button property*/
+        .cart_btn {
+            color: gold;
+        }
+
+        /*Cart button hover proprty*/
+        .cart_btn:hover {
+            color: rgb(255, 140, 0);
+        }
+
+        /*Navigation property*/
+        .navigation,
+        .search-inp,
+        .login_btn,
+        .search_btn {
+            font-family: "Playfair Display" !important;
+        }
+
+        .nav {
+            background-color: rgba(249, 246, 200, 0.422);
+        }
+
+        .nav-item:hover {
+            background-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Collapsible hamburger-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!--Website heading and logo-->
+            <i class="fa-solid fa-infinity fa-2xl"></i>
+            <a class="navbar-brand" style="font-size: 3vw; font-family: 'Fuggles', cursive; color: rgb(255, 191, 0);
+            font-weight: bolder;">InfiniteImpressions</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                <!--Sarch panel with button-->
+                <form class="d-flex mx-auto">
+                    <input class="form-control me-2 search-inp" type="search" style=" width: 39vw;"
+                        placeholder="Product name, Category name, etc." aria-label="Search">
+                    <button class="btn btn-outline-warning search_btn" style="color: black;"
+                        type="submit">Search</button>
+                </form>&nbsp;
+
+                <!--Login Button-->
+                <a href="login.html" class="nav-link login_btn" target="_blank">
+                    <button class="btn btn-outline-warning" style="color: black;">Login</button>
+                </a>&emsp;
+
+                <!--Cart Icon-->
+                <form class="d-flex">
+                    <a href="cart.html" class="cart_btn" target="_blank">
+                        <i class="fa-solid fa-basket-shopping fa-bounce fa-2xl"></i>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--End of collapsible hamburger-->
+
+    <!--Navbar-->
+    <div class="navigation" style="background-color:white;">
+        <ul class="nav justify-content-center">
+
+            <!--Home page links-->
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html" target="_blank" style="color: black;">Home</a>
+            </li>
+
+            <!--Products link-->
+            <li class="nav-item">
+                <a class="nav-link" href="featured_products.html" target="_blank" style="color: black;">All Products</a>
+            </li>
+
+            <!--Women Dropdown-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="women-all.html"
+                    style="color: black;" role="button" aria-expanded="false">Women</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="women-all.html" target="_blank">All products</a></li>
+                    <li><a class="dropdown-item" href="women-dresses.html" target="_blank">Dresses</a></li>
+                    <li><a class="dropdown-item" href="women-pants.html" target="_blank">Pants</a></li>
+                    <li><a class="dropdown-item" href="women-skirts.html" target="_blank">Skirts</a></li>
+                </ul>
+            </li>
+
+            <!--Men Dropdown-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="men-all.html" style="color: black;"
+                    role="button" aria-expanded="false">Men</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="men-all.html" target="_blank">All products</a></li>
+                    <li><a class="dropdown-item" href="men-shirts.html" target="_blank">Shirts</a></li>
+                    <li><a class="dropdown-item" href="men-pants.html" target="_blank">Pants</a></li>
+                    <li><a class="dropdown-item" href="men-hoodies.html" target="_blank">Hoodies</a></li>
+                </ul>
+            </li>
+
+            <!--Kids link-->
+            <li class="nav-item">
+                <a class="nav-link" href="kids.html" target="_blank" aria-disabled="true" style="color: black;">Kids</a>
+            </li>
+
+            <!--Contact link-->
+            <li class="nav-item">
+                <a class="nav-link" href="contact_us.html" target="_blank" aria-disabled="true"
+                    style="color: black;">Contact</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

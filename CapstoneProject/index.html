@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!--JavaScript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!--Fonts-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
+  <style>
+   
+    /*Background image properties*/
+    .bg-image {
+      background-size: cover;
+      min-height: 20rem;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    /*Text on image property*/
+    .logo {
+      font-size: 10vw;
+      font-family: 'Dancing Script', cursive;
+      text-shadow: 2px 2px 8px rgba(16, 16, 0, 0.93);
+    }
+
+    /*Text on image property*/
+    .slogan {
+      text-shadow: 2px 2px 8px rgba(63, 6, 63, 0.93);
+    }
+
+    /*Image property*/
+    .img-fluid {
+      height: auto;
+      width: auto;
+    }
+
+    /*Corousel button properties*/
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 100px;
+      width: 100px;
+      outline: black;
+      background-color: rgba(254, 225, 5, 0.3);
+      background-size: 100%, 100%;
+      border: 2px solid rgb(254, 225, 5);
+    }
+  </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <!--Header Section-->
+  <div id="header"></div>
+
+  <!--Corousel Start-->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="bg-image d-flex justify-content-center align-items-center img-fluid"
+          style="background-image: url('https://media.istockphoto.com/id/1425853190/photo/smart-phone-with-chopping-cart-parcel-box-sign-3d-render-concept-for.webp?b=1&s=170667a&w=0&k=20&c=SXQd7OKSEzGrmn0i47uR3p5-yinMJmlIMIgql4LxlQQ=');">
+
+          <!--Text on images-->
+          <div class="mask text-light d-flex justify-content-center flex-column text-center">
+            <h1 class="logo">InfiniteImpressions</h1>
+            <h3>
+              <p class="m-0 slogan">Selling only the best things online</p>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="bg-image d-flex justify-content-center align-items-center img-fluid"
+          style="background-image: url('https://media.istockphoto.com/id/512398526/photo/hand-click-businessman-icon-over-blue-background-connection-concept.webp?b=1&s=170667a&w=0&k=20&c=XY1yFaxiMbh8g6ua5dg1weS8OhfCxqWUHufVf8C9QJM=');">
+
+          <div class="mask text-light d-flex justify-content-center flex-column text-center">
+            <h1 class="logo">InfiniteImpressions</h1>
+            <h3>
+              <p class="m-0 slogan">Selling only the best things online</p>
+            </h3>
+          </div>
+        </div>
+      </div>
+        <div class="carousel-item">
+          <div class="bg-image d-flex justify-content-center align-items-center img-fluid"
+            style="background-image: url('https://media.istockphoto.com/id/1249219777/photo/shopping-online-concept-parcel-or-paper-cartons-with-a-shopping-cart-logo-in-a-trolley-on-a.webp?b=1&s=170667a&w=0&k=20&c=Q73ir-wB0u0cUX1Ho6OABXrQEBoD9b8FFV4Bn_DsEB8=');">
+
+            <div class="mask text-light d-flex justify-content-center flex-column text-center">
+              <h1 class="logo">InfiniteImpressions</h1>
+              <h3>
+                <p class="m-0 slogan">Selling only the best things online</p>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>&emsp;
+    <!--Corousel End-->
+
+    <!--Footer section-->
+    <div id="footer"></div>
+
+    <!--JS Code-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html")
+        $("#footer").load("footer.html")
+      })
+    </script>
+
+</body>
+</html>

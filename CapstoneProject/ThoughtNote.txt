@@ -1,0 +1,33 @@
+------------------------------------------------------------Thought Note-------------------------------------------------------------------
+
+IMPORTANT:Please make sure to connect to internet for access to images.
+
+In this project of Ecommerce every working is done under specific html tags. On login page javascript tag has been added which will show a pop up message when user will enter email or password based on defined condition.
+Marquee tag has used to show the images scrolling as brand images with name. Various pages have been added which are required and mentioned in the description. The list of files added are as mentione below:
+1.Cart.html
+2.Contact_Us.html
+3.header.html
+4.footer.html
+5.index.html
+6.men-all.html
+7.men-pants.html
+8.men-shirts.html
+9.men-hoodies.html
+10.women-all.html
+11.women-skirts.html
+12.women-pants.html
+13women-dresses.html
+14.login.html along with js code
+
+>Apart from this various styling is done in the html code only under style section. The styling is done to make the appearance look different so that everyting could look presentable. 
+>To make the font appealing font awesome has been used by importing the font awesome link and using font family attribute.
+>Simple javascript code is embedded in the login page which is used to check and verify a user if they have logged in or not, if not a message will be popped on the screen after clicking on the login button for checking. The header and footer are added dynamically to overcome the problem of code repition which will work only when we open that pages from live server or use vs code extension as live preview. 
+>Various hovering have added to make a user interactive with the website.
+>From the header and footer a user can click on any of the dropdowns or links then they will be directed to another page which will be easy to check and visit all pages at once.
+>In clothings of men, women and kids various cards have been made with name and description along with price and discount in which stars have been added along with AddToCart button on which headings are made to differentiate the pages along with different categories.
+>Every page mentioned have their responsive behaviour which could be visible on large,small and medium devices and there will be change in layout on all devices.
+>All the prerequisites as mentioned in the capstoned project description and in the screenshots are fullfilled.
+
+Open the header alone and check all the tabs as if they are working. I have tried my best to make dropdown work on every page but it's not working in other pages apart from header.html.
+The project deadline has been delayed because of the damage in my laptop and I was unable to solve my problem as all the code were in the laptop only and would'nt be able to solve my problem through DCS sessions and question and answer forum as the reply is delayed.
+Apart from all these everything is working properly from my side.
